@@ -98,6 +98,7 @@ replay_pid*
 ###### material bootcamp: Skip pdfs, txt
 *.pdf
 *.txt
+*.png
 
 #project
 .project
