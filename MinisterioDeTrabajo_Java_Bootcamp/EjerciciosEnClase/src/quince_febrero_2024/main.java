@@ -30,10 +30,10 @@ public class main {
 		System.out.println("Enter the sixth number: ");
 		int number6 = number6_scan.nextInt();
 		System.out.println(
-				"La suma es: " + sum(number1, number2) + "\n"
-				+ "La multiplicacion es: " + multiplication(number3, number4) + "\n"
-				+ "La frase es: " + concat(string1, string2) + "\n"
-				+ "La comparacion es: " + comparator(number5, number6));
+				"The sum is: " + sum(number1, number2) + "\n"
+				+ "The multiplication is: " + multiplication(number3, number4) + "\n"
+				+ "The phrase is: " + concat(string1, string2) + "\n"
+				+ "The comparation is: " + comparator(number5, number6));
 	}
 
 	static int sum(int numero1, int numero2) {
