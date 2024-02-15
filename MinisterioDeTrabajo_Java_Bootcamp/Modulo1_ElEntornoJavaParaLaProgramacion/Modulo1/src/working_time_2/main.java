@@ -1,3 +1,4 @@
+package working_time_2;
 import java.util.Scanner;
 
 public class main {

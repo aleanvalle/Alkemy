@@ -1,3 +1,5 @@
+package working_time_1;
+
 import java.util.Arrays;
 
 public class main {
@@ -8,7 +10,7 @@ public class main {
 		String palabra = "hola";
 		char caracter = '%';
 		boolean condicion = 5 == 5;
-		float numeroDecimal = 5.2f;
+		double numeroDecimal = 5.2;
 		int[] array = {1, 2, 3};
 		System.out.println
 		("numero: " + numero + "\n"
@@ -19,5 +21,4 @@ public class main {
 		+ "array: " + Arrays.toString(array) + "\n"
 		);
 	}
-
 }
