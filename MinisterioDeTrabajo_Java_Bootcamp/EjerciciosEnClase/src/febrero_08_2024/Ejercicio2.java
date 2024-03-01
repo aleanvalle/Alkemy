@@ -1,4 +1,4 @@
-package ocho_febrero_2024;
+package febrero_08_2024;
 
 public class Ejercicio2 {
 

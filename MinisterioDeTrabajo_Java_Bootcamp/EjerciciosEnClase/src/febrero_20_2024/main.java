@@ -1,4 +1,4 @@
-package veinte_febrero_2024;
+package febrero_20_2024;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,26 +8,18 @@ import java.util.Scanner;
 public class main {
 
 	public static void main(String[] args) {
-		Scanner number_scan = new Scanner(System.in);
-		Scanner evenOrOdd_scan = new Scanner(System.in);
-		Scanner monthNoSwitch_scan = new Scanner(System.in);
-		Scanner month_scan = new Scanner(System.in);
-		Scanner character_scan = new Scanner(System.in);
-		numberIsPositiveOrNegative(number_scan);
-		numberIsEvenOrOdd(evenOrOdd_scan);
-		isMonthAndSeason_NoSwitch(monthNoSwitch_scan);
-		isMonthAndSeason(month_scan);
-		is_S_Or_N_Character(character_scan);
-		number_scan.close();
-		evenOrOdd_scan.close();
-		monthNoSwitch_scan.close();
-		month_scan.close();
-		character_scan.close();
+		Scanner scan = new Scanner(System.in);
+		numberIsPositiveOrNegative(scan);
+		numberIsEvenOrOdd(scan);
+		isMonthAndSeason_NoSwitch(scan);
+		isMonthAndSeason(scan);
+		is_S_Or_N_Character(scan);
+		scan.close();
 	}
 
-	private static void numberIsPositiveOrNegative(Scanner number_scan) {
+	private static void numberIsPositiveOrNegative(Scanner scan) {
 		System.out.println("*numberIsPositiveOrNegative*\nEnter a number: ");
-		int number = number_scan.nextInt();
+		int number = scan.nextInt();
 		if(number >= 0) {
 			System.out.println("Number is positive.");
 		}
@@ -36,9 +28,9 @@ public class main {
 		}
 	}
 	
-	private static void numberIsEvenOrOdd(Scanner evenOrOdd_scan) {
+	private static void numberIsEvenOrOdd(Scanner scan) {
 		System.out.println("*numberIsEvenOrOdd*\nEnter a number: ");
-		int evenOrOdd = evenOrOdd_scan.nextInt();
+		int evenOrOdd = scan.nextInt();
 		if(evenOrOdd == 0) 
 		{
 			System.out.println("Number is zero.");
@@ -53,7 +45,7 @@ public class main {
 		}
 	}
 	
-	private static void isMonthAndSeason_NoSwitch(Scanner monthNoSwitch_scan) {
+	private static void isMonthAndSeason_NoSwitch(Scanner scan) {
 		Map<Integer, ArrayList<String>> seasonByMonth = new HashMap<Integer, ArrayList<String>>()
 		{{
 			put(1, new ArrayList<String>()
@@ -118,13 +110,13 @@ public class main {
 			}});
 		}};
 		System.out.println("*isMonthAndSeason_NoSwitch*\nEnter a month: ");
-		int month = monthNoSwitch_scan.nextInt();
+		int month = scan.nextInt();
 		System.out.println("Es " + seasonByMonth.get(month).get(0) + " y es " + seasonByMonth.get(month).get(1)); 
 	}
 	
-	private static void isMonthAndSeason(Scanner month_scan) {
+	private static void isMonthAndSeason(Scanner scan) {
 		System.out.println("*isMonthAndSeason*\nEnter a month: ");
-		int month = month_scan.nextInt();
+		int month = scan.nextInt();
 		switch (month) {
 		case 1:
 			System.out.println("Es enero y estamos en Verano");
@@ -164,9 +156,9 @@ public class main {
 		}
 	}
 	
-	private static void is_S_Or_N_Character(Scanner character_scan) {
+	private static void is_S_Or_N_Character(Scanner scan) {
 		System.out.println("*is_S_Or_N_Character*\nEnter a character: ");
-		char s_Or_N = character_scan.next().charAt(0);
+		char s_Or_N = scan.next().charAt(0);
 		if(s_Or_N == 'N' || s_Or_N == 'S') {
 			System.out.println("CORRECTO");
 		}

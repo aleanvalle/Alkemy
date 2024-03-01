@@ -1,4 +1,4 @@
-package veintidos_febrero_2024;
+package febrero_22_2024;
 
 import java.util.Scanner;
 
