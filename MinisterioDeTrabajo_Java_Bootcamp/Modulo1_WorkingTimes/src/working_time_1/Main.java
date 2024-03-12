@@ -2,7 +2,7 @@ package working_time_1;
 
 import java.util.Arrays;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("¡Hola Mundo!, estoy programando en Java.");
