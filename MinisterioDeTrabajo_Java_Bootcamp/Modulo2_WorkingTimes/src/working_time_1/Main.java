@@ -2,7 +2,7 @@ package working_time_1;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		int number1 = numberBetweenZeroAndNinetyNine();

@@ -21,7 +21,7 @@ public class Main {
 			opcion = scan.nextInt();
 			switch(opcion) {
 			case 1:
-				cuenta = cuenta.crearCuenta();
+				cuenta = cuenta.crearCuenta(scan);
 				break;
 			case 2:
 				System.out.println("Ingrese cantidad de dinero a ingresar: ");

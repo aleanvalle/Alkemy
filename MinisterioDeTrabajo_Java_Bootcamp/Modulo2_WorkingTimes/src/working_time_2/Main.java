@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class main {
+public class Main {
 	static final String POUND = "pound";
 	static final String USD = "usd";
 	static final String YEN = "yen";

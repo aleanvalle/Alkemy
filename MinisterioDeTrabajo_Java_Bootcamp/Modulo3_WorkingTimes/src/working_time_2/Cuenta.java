@@ -15,8 +15,7 @@ public class Cuenta {
 		this.saldoActual = saldoActual;
 	}
 	
-	public Cuenta crearCuenta() {
-		Scanner scan = new Scanner(System.in);
+	public Cuenta crearCuenta(Scanner scan) {
 		System.out.println("Ingrese Numero de cuenta: ");
 		int numeroCuenta = scan.nextInt();
 		System.out.println("Ingrese DNI: ");
