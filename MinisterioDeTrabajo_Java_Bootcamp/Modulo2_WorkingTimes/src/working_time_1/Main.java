@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void Main(String[] args) {
 		int number1 = numberBetweenZeroAndNinetyNine();
 		int number2 = (int) (Math.random() * 100);
 		int result = number1 + number2;
