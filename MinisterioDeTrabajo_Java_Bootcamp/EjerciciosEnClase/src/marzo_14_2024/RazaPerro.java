@@ -10,35 +10,38 @@ public class RazaPerro {
 		int opcion;
 		ArrayList<String> razasPerros = new ArrayList<String>();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Ingrese una raza de perro: ");
-		String raza = scan.nextLine();
-		razasPerros.add(raza);
+		razasPerros.add("pekines");
+		razasPerros.add("doberman");
+		razasPerros.add("mastin napolitano");
+		razasPerros.add("golden retriever");
+		razasPerros.add("bulldog");
 		do {
-			System.out.println("Quiere guardar otra raza?");
+			System.out.println("Quiere guardar una raza?");
 			System.out.println("1) Si");
 			System.out.println("2) Salir");
-			opcion = scan.nextInt();
+			opcion = Integer.parseInt(scan.nextLine());
 			switch (opcion) {
 			case 1:
 				System.out.println("Ingrese una raza de perro: ");
-				raza = scan.nextLine();
+				String raza = scan.nextLine();
 				Iterator<String> it = razasPerros.iterator();
 				boolean esNuevaRaza = false;
 				while (it.hasNext()) {
 					if(it.next().equals(raza)) {
+						esNuevaRaza = false;
 						it.remove();
+						break;
 					}
-					else {
-						razasPerros.add(raza);
-						esNuevaRaza = true;
-					}
+					esNuevaRaza = true;
 				}
 				if(!esNuevaRaza) {
+					System.out.println("No es nueva raza, eliminada de la lista.");
 					for(String razaPerro : razasPerros) {
 						System.out.println("[" + razaPerro + "]");
 					}
 				}
 				else {
+					razasPerros.add(raza);
 					System.out.println("Es nueva raza, agregada a la lista.");
 					for(String razaPerro : razasPerros) {
 						System.out.println("[" + razaPerro + "]");
@@ -47,6 +50,7 @@ public class RazaPerro {
 				}
 				break;
 			case 2:
+				System.out.println("Buen dia! Esta es la lista de razas: ");
 				for(String razaPerro : razasPerros) {
 					System.out.println("[" + razaPerro + "]");
 				}
