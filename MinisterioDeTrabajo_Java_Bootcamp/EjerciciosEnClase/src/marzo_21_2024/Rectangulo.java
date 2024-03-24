@@ -20,6 +20,9 @@ public class Rectangulo implements CalculosFormas {
 	public double perimetro() {
 		return (base + altura) / 2;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "{**RECTANGULO** \nPerimetro: " + this.perimetro() + "\nArea: " + this.area() + "}";
+	}
 }

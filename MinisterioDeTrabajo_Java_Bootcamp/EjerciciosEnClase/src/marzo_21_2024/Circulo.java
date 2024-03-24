@@ -18,4 +18,11 @@ public class Circulo implements CalculosFormas {
 	public double perimetro() {
 		return pi * diametro;
 	}
+
+	@Override
+	public String toString() {
+		return "{**CIRCULO** \nPerimetro: " + this.perimetro() + "\nArea: " + this.area() + "}";
+	}
+	
+	
 }
