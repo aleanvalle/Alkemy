@@ -17,6 +17,11 @@ public class Main {
 		
 		ArrayList<Libro> biblioteca = new ArrayList<>();
 		ArrayList<Usuario> usuarios = new ArrayList<>();
+		
+		usuarios.add(cosme);
+		usuarios.add(mario);
+		usuarios.add(homeroElBueno);
+		
 		LibroServicio bookService = new LibroServicio(biblioteca);
 		UsuarioServicio userService = new UsuarioServicio(usuarios);
 		Scanner scanner = new Scanner(System.in);

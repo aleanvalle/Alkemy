@@ -18,6 +18,7 @@ public class LibroServicio {
 		nuevoLibro.setGenero(genero);
 		nuevoLibro.setIsbn(isbn);
 		nuevoLibro.setTitulo(titulo);
+		nuevoLibro.setDisponible(true);
 		libros.add(nuevoLibro);
 		return;
 	}

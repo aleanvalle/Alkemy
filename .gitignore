@@ -97,7 +97,7 @@ replay_pid*
 
 ###### material bootcamp: Skip pdfs, txt
 *.pdf
-*.txt
+canvaYLinkedin.txt
 *.png
 
 #project
